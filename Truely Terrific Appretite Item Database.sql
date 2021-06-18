@@ -18,7 +18,30 @@ insert into Item(ItemID, Dish, Price, Category) values('M102', 'JACKFRUIT BIRYAN
 insert into Item(ItemID, Dish, Price, Category) values('D101', 'KALA KHATTA GOLA ICE', 3.70, 'Dessert');
 insert into Item(ItemID, Dish, Price, Category) values('D102', 'GULAB JAMUN', 6.20, 'Dessert');
 insert into Item(ItemID, Dish, Price, Category) values('D103', 'BASMATI KHEER', 5.90, 'Dessert');
-select * from Item
+select * from Item;
+
+
+
+
+update Item set Price = '7.50' where ItemID = 'B101';
+update Item set Price = '7.50' where ItemID = 'B103';
+update Item set Price = '9.90' where ItemID = 'B104';
+update Item set Price = '8.50' where ItemID = 'B105';
+
+update Item set Price = '2.90' where ItemID = 'S101';
+update Item set Price = '5.50' where ItemID = 'S102';
+update Item set Price = '4.90' where ItemID = 'S103';
+
+update Item set Price = '9.70' where ItemID = 'G101';
+update Item set Price = '9.20' where ItemID = 'G102';
+update Item set Price = '12.90' where ItemID = 'G103';
+
+update Item set Price = '12.50' where ItemID = 'M101';
+update Item set Price = '12.50' where ItemID = 'M102';
+
+update Item set Price = '3.70' where ItemID = 'D101';
+update Item set Price = '6.20' where ItemID = 'D102';
+update Item set Price = '5.90' where ItemID = 'D103';
 
 create table COrder(OrderID int primary key auto_increment,
                     Cname varchar(100), CPhone varchar(100), 
